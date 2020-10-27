@@ -15,12 +15,10 @@ use Illuminate\Support\Facades\Route;
 Route::any('/test', [App\Http\Controllers\TestController::class, 'index']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
 
 Auth::routes();
-
-
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
