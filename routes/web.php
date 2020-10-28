@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::any('/test', [App\Http\Controllers\TestController::class, 'index']);
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('home');
 });
 
 Auth::routes();
