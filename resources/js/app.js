@@ -3,7 +3,7 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+import navbar from './components/GymCard.vue';
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -30,4 +30,7 @@ Vue.component('gym-card', require('./components/GymCard.vue').default);
 
 const app = new Vue({
     el: '#app',
+    components: {
+        'navbar': require('./components/GymCard.vue'),
+    }
 });
